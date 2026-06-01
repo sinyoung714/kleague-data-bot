@@ -1,0 +1,33 @@
+name: Daily Football Data Scraper
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # 매일 밤 12시(UTC 기준)에 자동 실행
+  workflow_dispatch: # 내가 버튼을 눌러서 수동으로도 실행할 수 있게 하는 옵션
+
+jobs:
+  scrape-data:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 내 창고 파일 가져오기
+      uses: actions/checkout@v3
+
+    - name: 파이썬 설치하기
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: 필요한 도구(패키지) 설치하기
+      run: pip install -r requirements.txt
+
+    - name: 수집 로봇(scraper.py) 실행하기
+      run: python scraper.py
+
+    - name: 수집된 데이터 파일을 내 창고에 저장(Commit)하기
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add .
+        git commit -m "Auto-update: 축구 데이터 수집 완료" || echo "No changes to commit"
+        git push
