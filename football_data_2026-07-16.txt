@@ -1,0 +1,20 @@
+=== FotMob Data ===
+<html lang="en" dir="ltr" data-color-scheme="light"><head><meta name="apple-itunes-app" content="app-id=488575683"><link rel="alternate" href="android-app://com.mobilefootie.wc2010/http"><link rel="apple-touch-icon" href="/img/android-icon-192x192.png"><link rel="manifest" href="/manifest.json"><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="icon" type="image/png" href="/favicon.png"><link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="apple-mobile-web-app-title" content="FotMob"><meta name="color-scheme" content="dark light"><title>FotMob - Football Live Scores</title><meta name="robots" content="all"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0"><meta property="og:site_name" content="FotMob"><meta property="og:title" content="FotMob"><meta name="description" content="FotMob is the essential app for matchday
+
+=== K-League Data ===
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>K리그 데이터 포털</title>
+</head>
+
+
+
+<frameset rows="0,*" border="0">
+    <frame src="about:blank">
+    <frame src="https://portal.kleague.com/user/loginById.do?portalGuest=rstNE9zxjdkUC9kbUA08XQ==" frameborder="0" scrolling="auto">
+</frameset>
+
+<noframes>
+<body>프레임지원X</body>
+</noframes>
+</html>
